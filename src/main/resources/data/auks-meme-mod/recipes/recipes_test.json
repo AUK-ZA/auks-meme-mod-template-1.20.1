@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "auks-meme-mod:test_block"
+        }
+    ],
+    "result": {
+        "item": "auks-meme-mod:test",
+        "count": 9
+    }
+}
