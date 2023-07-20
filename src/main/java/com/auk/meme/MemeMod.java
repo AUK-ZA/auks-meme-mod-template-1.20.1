@@ -22,7 +22,7 @@ public class MemeMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
-		Registry.register(Registries.SOUND_EVENT, ModSounds.MY_SOUND_ID, ModSounds.MY_SOUND_EVENT);
+
 
 	}
 }

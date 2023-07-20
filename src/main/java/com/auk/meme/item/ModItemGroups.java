@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TEST);
                         entries.add(ModItems.MOUSE_HEAD);
                         entries.add(ModItems.DUCK_NECK);
+                        entries.add(ModItems.OP_ITEM);
 
 
                     }).build());

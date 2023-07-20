@@ -1,7 +1,7 @@
 package com.auk.meme.item;
 
 import com.auk.meme.MemeMod;
-import com.auk.meme.item.custom.CustomItem;
+import com.auk.meme.item.custom.OpItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,8 +16,8 @@ public class ModItems {
     public static final Item DUCK_NECK = registerItems("duck_neck",
             new Item(new FabricItemSettings().food(ModFoodComponents.DUCK_NECK)));//创建物品
 
-    public static final Item CUSTOM_ITEM = registerItems("custom_item",
-            new CustomItem(new FabricItemSettings()));
+    public static final Item OP_ITEM = registerItems("op_item",
+            new OpItem(new FabricItemSettings()));
 
 
 

@@ -1,7 +1,7 @@
 {
-  "my_sound": {
+  "op_sound": {
     "sounds": [
-      "auks-meme-mod:my_sound"
+      "auks-meme-mod:op_sound"
     ]
   }
 }
