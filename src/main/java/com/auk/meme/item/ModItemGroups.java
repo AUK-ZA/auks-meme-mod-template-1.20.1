@@ -16,8 +16,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,//创建一个物品组
-            new Identifier(MemeMod.MOD_ID,"test"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.test"))
+            new Identifier(MemeMod.MOD_ID,"meme"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.meme"))
                     .icon(() -> new ItemStack(ModItems.TEST)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TEST);
                         entries.add(ModBlocks.TEST_BLOCK);
