@@ -3,8 +3,11 @@ package com.auk.meme;
 import com.auk.meme.block.ModBlocks;
 import com.auk.meme.item.ModItemGroups;
 import com.auk.meme.item.ModItems;
+import com.auk.meme.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +21,8 @@ public class MemeMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
+		Registry.register(Registries.SOUND_EVENT, ModSounds.MY_SOUND_ID, ModSounds.MY_SOUND_EVENT);
 
 	}
 }
