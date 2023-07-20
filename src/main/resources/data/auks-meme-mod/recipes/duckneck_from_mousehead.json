@@ -3,9 +3,8 @@
   "category": "misc",
   "cookingtime": 50,
   "experience": 0.1,
-  "group": "mouse-head",
   "ingredient": {
-    "item": "auks-meme-mod:mouse-head"
+    "item": "auks-meme-mod:mouse_head"
   },
-  "result": "auks-meme-mod:duck-neck"
+  "result": "auks-meme-mod:duck_neck"
 }

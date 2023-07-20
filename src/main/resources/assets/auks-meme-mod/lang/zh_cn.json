@@ -3,7 +3,7 @@
   "block.auks-meme-mod.test_block": "测试方块",
   "itemgroup.meme_block": "烂梗方块",
   "itemgroup.meme": "烂梗物品",
-  "item.auks-meme-mod.mouse-head": "老鼠头",
-  "item.auks-meme-mod.duck-neck": "鸭脖"
+  "item.auks-meme-mod.mouse_head": "老鼠头",
+  "item.auks-meme-mod.duck_neck": "鸭脖"
 
 }

@@ -10,9 +10,9 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item TEST = registerItems("test",
             new Item(new FabricItemSettings()));//创建Test物品
-    public static final Item MOUSE_HEAD = registerItems("mouse-head",
+    public static final Item MOUSE_HEAD = registerItems("mouse_head",
             new Item(new FabricItemSettings()));//创建物品
-    public static final Item DUCK_NECK = registerItems("duck-neck",
+    public static final Item DUCK_NECK = registerItems("duck_neck",
             new Item(new FabricItemSettings().food(ModFoodComponents.DUCK_NECK)));//创建物品
 
 
