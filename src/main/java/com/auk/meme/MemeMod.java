@@ -17,12 +17,10 @@ public class MemeMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {		//初始化
-		LOGGER.info("Hello AUK world");
+		LOGGER.info("Hello world");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
-
-
 	}
 }
