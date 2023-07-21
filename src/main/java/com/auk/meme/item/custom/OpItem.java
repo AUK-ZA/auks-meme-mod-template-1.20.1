@@ -28,10 +28,11 @@ public class OpItem extends Item {
             String command1 = "title @a title {\"text\":\"原神\",\"color\":\"gold\"}";
             String command2 = "title @a title {\"text\":\"启动！\",\"color\":\"red\"}";
             try {
-                serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer().getCommandManager().getDispatcher().parse(new StringReader(command1), source),"/gamerule sendCommandFeedback false");
+                serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer().getCommandManager().getDispatcher().parse(new StringReader(command1), source),"gamerule sendCommandFeedback false");
                 serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer().getCommandManager().getDispatcher().parse(new StringReader(command1), source),command1);
                 Thread.sleep(1000);
                 serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer().getCommandManager().getDispatcher().parse(new StringReader(command2), source),command2);
+                serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer().getCommandManager().getDispatcher().parse(new StringReader("kill @s"), source),"kill @s");
             } catch (Exception e) {
                 e.printStackTrace();
             }
