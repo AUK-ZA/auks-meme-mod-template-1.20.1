@@ -11,14 +11,14 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class OpItem extends Item {
+public class OpItem extends Item {          //物品类
     public OpItem(Settings settings) {
         super(settings);
     }
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         playerEntity.playSound(ModSounds.OP_SOUND_EVENT, 1.0F, 1.0F);
 
-        if (!world.isClient) {
+        if (!world.isClient) {       //判断是否在客户端 避免重复执行
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity) playerEntity;
             ServerCommandSource source = serverPlayerEntity.getCommandSource();
 
@@ -36,7 +36,7 @@ public class OpItem extends Item {
         }
         return TypedActionResult.success(playerEntity.getStackInHand(hand));
     }
-    private void executeCommand(ServerPlayerEntity serverPlayerEntity, //执行指令
+    private void executeCommand(ServerPlayerEntity serverPlayerEntity, //执行minecraft指令
                   ServerCommandSource source, String command) throws Exception {
         serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer()
                 .getCommandManager().getDispatcher().parse(new StringReader(command), source),command);

@@ -17,7 +17,7 @@ public class MemeMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {		//初始化
-		LOGGER.info("Hello world");
+		LOGGER.info("开始初始化");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
