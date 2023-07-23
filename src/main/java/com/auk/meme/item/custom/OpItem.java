@@ -24,7 +24,7 @@ public class OpItem extends Item {          //物品类
 
             try {
                 executeCommand(serverPlayerEntity, source, "gamerule sendCommandFeedback false");
-                executeCommand(serverPlayerEntity, source, "title @a title {\"text\":\"原神\",\"color\":\"gold\"}");
+                executeCommand(serverPlayerEntity, source, "title @a title {\"text\":\"原始人\",\"color\":\"gold\"}");
                 Thread.sleep(1200);
                 executeCommand(serverPlayerEntity, source, "title @a title {\"text\":\"启动！\",\"color\":\"red\"}");
                 Thread.sleep(2400);

@@ -15,8 +15,7 @@ public class ModItemGroups {
     public static final ItemGroup MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,//创建一个物品组
             new Identifier(MemeMod.MOD_ID,"meme"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.meme"))
-                    .icon(() -> new ItemStack(ModItems.TEST)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.TEST);
+                    .icon(() -> new ItemStack(ModItems.OP_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MOUSE_HEAD);
                         entries.add(ModItems.DUCK_NECK);
                         entries.add(ModItems.OP_ITEM);
