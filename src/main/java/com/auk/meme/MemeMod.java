@@ -4,6 +4,7 @@ import com.auk.meme.block.ModBlocks;
 import com.auk.meme.item.ModItemGroups;
 import com.auk.meme.item.ModItems;
 import com.auk.meme.sound.ModSounds;
+import com.auk.meme.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.registry.Registries;
@@ -22,5 +23,6 @@ public class MemeMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModRegistries.registerModStuffs();
 	}
 }

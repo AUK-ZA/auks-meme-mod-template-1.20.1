@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "auks-meme-mod:p_ore"
+  },
+  "result": "auks-meme-mod:p"
+}

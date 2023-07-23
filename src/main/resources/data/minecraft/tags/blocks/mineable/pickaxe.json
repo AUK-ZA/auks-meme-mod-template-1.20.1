@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "auks-meme-mod:test_block"
+    "auks-meme-mod:test_block",
+    "auks-meme-mod:p_ore",
+    "p_block"
   ]
 }

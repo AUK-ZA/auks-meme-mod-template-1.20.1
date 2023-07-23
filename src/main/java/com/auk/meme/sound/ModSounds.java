@@ -6,10 +6,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
-public class ModSounds {//该类是根据官方源码瞎猜的
+public class ModSounds {//模组音频
 
-        public static final SoundEvent OP_SOUND_EVENT = registerSoundEvent("op_sound");
-        private static SoundEvent registerSoundEvent(String name){
+        public static final SoundEvent OP_SOUND_EVENT = registerSoundEvent("op_sound");//创建声音实例
+        private static SoundEvent registerSoundEvent(String name){          //辅助方法
                 Identifier identifier = new Identifier(MemeMod.MOD_ID,name);
                 return Registry.register(Registries.SOUND_EVENT,identifier,SoundEvent.of(identifier));
         }

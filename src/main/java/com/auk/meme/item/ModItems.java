@@ -16,7 +16,9 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.DUCK_NECK)));//创建物品
 
     public static final Item OP_ITEM = registerItems("op_item",
-            new OpItem(new FabricItemSettings()));
+            new OpItem(new FabricItemSettings()));//创建自定义物品
+    public static final Item P = registerItems("p",
+            new Item(new FabricItemSettings()));//创建物品
 
 
 

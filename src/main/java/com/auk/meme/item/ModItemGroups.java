@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MOUSE_HEAD);
                         entries.add(ModItems.DUCK_NECK);
                         entries.add(ModItems.OP_ITEM);
+                        entries.add(ModItems.P);
 
 
                     }).build());
@@ -29,6 +30,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.TEST_BLOCK)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.TEST_BLOCK);
+                        entries.add(ModBlocks.P_ORE);
+                        entries.add(ModBlocks.P_BLOCK);
 
                     }).build());
 

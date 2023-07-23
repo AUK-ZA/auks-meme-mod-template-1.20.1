@@ -1,11 +1,14 @@
 {
   "block.auks-meme-mod.test_block": "Block of test",
+  "block.auks-meme-mod.p_ore": "p_ore",
+  "block.auks-meme-mod.p_block": "p_block",
 
   "itemgroup.meme_block": "Meme Block",
-
   "itemgroup.meme": "Meme Item",
+
   "item.auks-meme-mod.duck_neck" : "duck neck",
   "item.auks-meme-mod.mouse_head": "mouse head",
-  "item.auks-meme-mod.op_item": "原始人 启动！"
+  "item.auks-meme-mod.op_item": "原始人 启动！",
+  "item.auks-meme-mod.p": "p"
 
 }
