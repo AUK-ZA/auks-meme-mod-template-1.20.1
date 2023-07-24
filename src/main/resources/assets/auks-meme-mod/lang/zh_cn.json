@@ -11,7 +11,10 @@
   "item.auks-meme-mod.mouse_head": "老鼠头",
   "item.auks-meme-mod.duck_neck": "鸭脖",
   "item.auks-meme-mod.op_item": "原始人 启动！",
-  "item.auks-meme-mod.p": "人矿"
+  "item.auks-meme-mod.p": "人矿",
+
+
+  "tooltip.auks-meme-mod.tooltip.shift": "右键播放声音"
 
 
 }

@@ -9,6 +9,8 @@
   "item.auks-meme-mod.duck_neck" : "duck neck",
   "item.auks-meme-mod.mouse_head": "mouse head",
   "item.auks-meme-mod.op_item": "原始人 启动！",
-  "item.auks-meme-mod.p": "p"
+  "item.auks-meme-mod.p": "p",
+
+  "tooltip.auks-meme-mod.tooltip.shift": "Right click to play sound"
 
 }

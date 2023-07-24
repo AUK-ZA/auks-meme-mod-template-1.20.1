@@ -2,14 +2,20 @@ package com.auk.meme.item.custom;
 
 import com.auk.meme.sound.ModSounds;
 import com.mojang.brigadier.StringReader;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class OpItem extends Item {          //物品类
     public OpItem(Settings settings) {
@@ -40,5 +46,12 @@ public class OpItem extends Item {          //物品类
                   ServerCommandSource source, String command) throws Exception {
         serverPlayerEntity.getServer().getCommandManager().execute(serverPlayerEntity.getServer()
                 .getCommandManager().getDispatcher().parse(new StringReader(command), source),command);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.auks-meme-mod.tooltip.shift"));
+        }
     }
 }
