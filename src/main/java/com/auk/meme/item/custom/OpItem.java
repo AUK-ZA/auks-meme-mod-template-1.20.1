@@ -48,7 +48,7 @@ public class OpItem extends Item {          //物品类
                 .getCommandManager().getDispatcher().parse(new StringReader(command), source),command);
     }
 
-    @Override
+    @Override       //当按下shift时显示提示
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()){
             tooltip.add(Text.translatable("tooltip.auks-meme-mod.tooltip.shift"));
