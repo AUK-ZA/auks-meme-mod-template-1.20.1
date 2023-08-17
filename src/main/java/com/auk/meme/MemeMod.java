@@ -11,7 +11,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+//测试
 public class MemeMod implements ModInitializer {
 	public static final String MOD_ID = "auks-meme-mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
